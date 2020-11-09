@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header><!--Cabeçalho-->
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section><!--Utilizada para marcar os conteúdos de uma página...Exemplo no seu site tem uma parte sobre Rock, outra sobre Funk, existirá uma section para cada conteúdo, agrupando o conteúdo de acordo, não deve ser usado apenas para fins de estilização, este caso use 'div'-->
+        <div>
+            <p>Ano de Nascimento
+                <input type="number" name="txtano" id="txtano" min="0"></br><!--Cria um campo do tipo 'number'-->
+            </p>
+            <p>Sexo: 
+                <input type="radio" name="radsex" id="masc" checked><!--Cria um campo do tipo 'radio', este coloca aquela bolinha de marcar -->
+                
+                <!--Type radio: Se colocar os 'names' com nome diferente, o usuário poderá marcar 2 vezes -->
+
+                <label for="masc">Masculino</label><!--Associa a palavra a outro controle, neste exemplo estamos associando a palavra masculino ao input -->
+                <input type="radio" name="radsex" id="femi">
+                <label for="femi">Feminino</label>
+                
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()"><!--'onclick' : Evento DOM para quando o usuário clicar-->
+            </p>
+        </div>
+        
+        <div id="res">
+            Preencha os Dados acima para ver o resultado!
+        </div>
+        </section>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

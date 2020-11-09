@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com o DOM</title>
+    <style>
+        body {
+            background: #311481;
+            color: white;
+            font: normal 18PT aRIAL;
+        }
+    </style>
+</head>
+<body>
+    <H1>INICIANDO ESTUDOS COM O DOM</H1>
+    <P>Aqui vai o resultado</P>
+    <P>Aprendendo a usar o <STRONG>DOM</STRONG> em JavaScript</P>
+    <div id="msg">Clique em mim</div>
+    <script>
+        /*Pode se
+        buscar  configs da página*/
+
+        //window.document.write(window.document.charset)    //BUSCA A CONFIG DOS CARACTERES...Exemplo: UTF-8    
+        //window.document.write(window.navigator.appName)  //Busca o nome do navegador
+        //window.document.write(window.document.URL)      //Busca a URL
+
+        //Tudo o que está na Árvore DOM são chamados de elementos
+
+        /* ---------------Navegando pelos Elementos por Tag/Marca-------------------------------------------------*/  
+
+            //var corpo = window.document.body
+            //corpo.style.background = 'black'
+            //p1.style.color = 'red'
+            var p1 = window.document.getElementsByTagName('p')[1] // Selecionando o primeiro parágrafo da NOSSA árvore DOM... [] é a posição
+            window.document.write('Olha lá: ' +p1.innerText) //InnerText : texto que está dentro sem formatação
+            window.document.write('Olha lá: ' +p1.innerHTML)   //InnerHTML : texto que está dentro com formatação
+
+        /*----------------- Navegando pelos Elementos por ID-----------------------------------*/ 
+
+            //var d = window.document.getElementById('msg')
+            //d.style.background = 'green'
+            //d.innerText = 'Estou aguardando...' // Modificando
+
+        /*----------------- Navegando pelos Elementos por Name----------------------------------------------*/
+            /*
+                <div name="msg">Clique em mim</div>
+                comando : var d = document.getElementsByName('name')... Lembrando de pôr os colchetes
+            */
+
+        /*----------------- Navegando pelos Elementos por Classe------------------------------------------*/
+            /*
+                <div class="msg">Clique em mim</div>
+                comando : var d = document.getElementByClassName('msg')... Lembrando de pôr os colchetes
+            */
+
+         /*----------------- Navegando pelos Elementos por Seletor-------------------------------*/
+            
+                var d = window.document.querySelector('div#msg') //'#' para id / '.' para classes
+                var b = window.document.body.style.background = 'green'
+                d.style.color = 'blue'
+                d.innerHTML = 'Mudou'
+                d.style.background = 'black'     
+    </script>
+</body>
+</html>
