@@ -1,0 +1,10 @@
+div{
+    padding: 15px;
+    background-color: cadetblue;
+    width: 200px;
+    text-align: center;
+    
+}
+h2{
+    cursor: pointer;
+}
