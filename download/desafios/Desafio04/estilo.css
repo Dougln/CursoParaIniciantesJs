@@ -1,0 +1,57 @@
+div.carteira{
+    height: 100px;
+    width: 300px;
+    background-color:rgb(30, 44, 22);
+    color: white;
+    text-align: center;
+}
+div.vga{
+    background-color: rgb(220, 0, 0);
+    height: 100px;
+    width:  100px;
+    
+}
+div.mouse-razer{
+    background-color: rgb(0,140 , 0);
+    height: 100px;
+    width:  100px;
+    
+
+}
+div.teclado-razer{
+    background-color: rgb(0,150 , 0);
+    height: 100px;
+    width:  100px;
+    
+
+}
+div.cpu-amd{
+    background-color: rgb(400,0 , 0);
+    height: 100px;
+    width:  100px;
+    
+}
+section{
+    position: absolute;
+    background-color: whitesmoke;
+    height: 400px;
+    right:0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 413px;
+
+}
+section div  {
+    text-align: center;
+    display: inline-block;
+    
+}
+h3{
+    margin-top:0px;
+    cursor: pointer;
+}
+input{
+    margin-top: auto;
+}
